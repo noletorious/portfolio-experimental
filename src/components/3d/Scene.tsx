@@ -15,6 +15,7 @@ import FloatingSphere from "./FloatingSphere";
 import ParticleField from "./ParticleField";
 import GeometricArt from "./GeometricArt";
 import ParticleSystem from "./ParticleSystem";
+import PortlandScene from "./PortlandScene";
 
 interface SceneProps {
   currentScene: string;
@@ -23,12 +24,16 @@ interface SceneProps {
 const Scene: React.FC<SceneProps> = ({ currentScene }) => {
   const renderScene = () => {
     switch (currentScene) {
+      case "main":
+        return <MainScene />;
       case "particles":
         return <ParticleSystem />;
       case "geometry":
         return <GeometricArt />;
+      case "portland":
+        return <PortlandScene />;
       default:
-        return <MainScene />;
+        return <PortlandScene />;
     }
   };
 
@@ -37,7 +42,7 @@ const Scene: React.FC<SceneProps> = ({ currentScene }) => {
 
 const MainScene: React.FC = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full absolute inset-0 cursor-grab active:cursor-grabbing">
       <Canvas
         shadows
         camera={{ position: [0, 0, 8], fov: 45 }}

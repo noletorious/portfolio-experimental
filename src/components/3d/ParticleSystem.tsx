@@ -5,7 +5,7 @@ import * as THREE from "three";
 
 const ParticleSystem: React.FC = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full cursor-grab active:cursor-grabbing">
       <Canvas camera={{ position: [0, 0, 15], fov: 60 }}>
         <color attach="background" args={["#000510"]} />
 

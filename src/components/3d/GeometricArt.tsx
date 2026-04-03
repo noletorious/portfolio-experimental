@@ -5,7 +5,7 @@ import * as THREE from "three";
 
 const GeometricArt: React.FC = () => {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full cursor-grab active:cursor-grabbing">
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         <ambientLight intensity={0.3} />
         <pointLight position={[10, 10, 10]} intensity={1} color="#ff6b6b" />
