@@ -12,6 +12,7 @@ const scenes = [
   { id: "portland", name: "Portland Live", description: "Home" },
   { id: "geometry", name: "Cosmic Art", description: "Animated shapes" },
   { id: "particles", name: "Particle Galaxy", description: "Advanced effects" },
+  { id: "ascii", name: "ASCII Art", description: "Image to ASCII" },
   { id: "main", name: "3D Showcase", description: "Interactive scene" },
 ];
 

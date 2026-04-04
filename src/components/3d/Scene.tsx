@@ -16,6 +16,7 @@ import ParticleField from "./ParticleField";
 import GeometricArt from "./GeometricArt";
 import ParticleSystem from "./ParticleSystem";
 import PortlandScene from "./PortlandScene";
+import AsciiArtScene from "./AsciiArtScene";
 
 interface SceneProps {
   currentScene: string;
@@ -30,6 +31,8 @@ const Scene: React.FC<SceneProps> = ({ currentScene }) => {
         return <ParticleSystem />;
       case "geometry":
         return <GeometricArt />;
+      case "ascii":
+        return <AsciiArtScene />;
       case "portland":
         return <PortlandScene />;
       default:

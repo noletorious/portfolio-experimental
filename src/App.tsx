@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Scene from "./components/3d/Scene";
 import Overlay from "./components/ui/Overlay";
 import PerformanceMonitor from "./components/ui/PerformanceMonitor";
+import LoadingStatus from "./components/ui/LoadingStatus";
 
 function App() {
   const [currentScene, setCurrentScene] = useState("portland");
@@ -43,6 +44,9 @@ function App() {
 
       {/* Performance Monitor */}
       <PerformanceMonitor />
+
+      {/* Loading Status Indicator */}
+      <LoadingStatus />
     </div>
   );
 }
